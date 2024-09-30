@@ -1,0 +1,7 @@
+.home-container {
+    border-left-width: 0.8px;
+    border-right-width: 0.8px;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+}
