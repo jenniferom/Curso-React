@@ -1,15 +1,22 @@
-import PostMetadata from '../../components/Post/PostMetadata/PostMetadata';
+import NewPost from '../../components/NewPost/NewPost';
+import PostAvatarUser from '../../components/Post/PostAvatarUser/PostAvatarUser';
 import './homecontainer.css';
+import Avatar from '../../../../core/images/avatar-user.jpg'
+import Navbar from './Navbar';
 
 const HomeContainer = () => {
     return(
         <div className="home-container">
-            <PostMetadata
-                createdAt="2024-09-23 12:00:00"
-                fullName="Jennita"
-                username="@jenniferortiz_m"
-                verified
-            />
+            <div className='navbar-home'>
+                <Navbar />
+            </div>
+            <div>
+                <NewPost/>
+            </div>
+            <div>
+                lista de post
+                <PostAvatarUser urlImage={Avatar} />
+            </div>
         </div>
     );
 }

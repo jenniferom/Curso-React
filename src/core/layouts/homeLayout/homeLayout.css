@@ -1,0 +1,10 @@
+.home-layout {
+  align-items: center;
+  display: flex;
+  gap: 50px;
+}
+
+.homecontainer {
+  width: 60%;
+  max-width: 630px;
+}
