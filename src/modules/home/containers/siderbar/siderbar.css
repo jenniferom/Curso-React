@@ -1,23 +1,24 @@
 /*.siderbar {
-  align-items: flex-end;
-  color-scheme: dark;
-  text-decoration: none;
-  width: 275px;
-  height: 100vh;
+  width: 100%;
 }*/
 .x-logo {
   border-radius: 50%;
   cursor: pointer;
   width: max-content;
+  max-height: 30px;
   &:hover{
     background-color:  rgb( 255, 255, 255, 0.1);
   }
 }
 
+.lista-elemetos {
+  padding: 2px 0 4px 0 ;
+}
+
 .userprofile {
   margin: 12px 0;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 50px;
   display: flex;
   gap: 10px;
   height: 60px;

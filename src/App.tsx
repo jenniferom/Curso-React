@@ -3,7 +3,7 @@ import DefaultLayout from './core/layouts/homeLayout/DefaultLayout';
 
 function App() {
     return (
-        <div className='app-container'>
+        <div >
             <DefaultLayout />
         </div>
     );
