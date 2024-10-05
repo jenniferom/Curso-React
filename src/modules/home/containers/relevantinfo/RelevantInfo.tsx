@@ -1,7 +1,11 @@
+import SearchInput from "../../../../core/components/inputs/search/Search";
+import WhatsHappening from "./WhatsHappening/WhatsHappening";
+
 const RelevantInfo = () => {
     return(
         <div>
-            relevantinfo
+            <SearchInput />
+            <WhatsHappening />
         </div>
     );
 }
