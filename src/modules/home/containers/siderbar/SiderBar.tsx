@@ -1,46 +1,37 @@
 import Elemento from "./Elemento";
 import './siderbar.css';
-import { VscHome, VscSearch, VscBell, VscMail, VscChip, VscBookmark, VscOrganization, VscAccount, VscEllipsis } from 'react-icons/vsc';
+import ListaElementos from "./ListaElementos";
+import Button from "../../../../core/components/button/Button";
+import PostAvatarUser from "../../components/Post/PostAvatarUser/PostAvatarUser";
+import Logo from '../../../../core/images/x-logo.png';
+import Avatar from '../../../../core/images/avatar-user.jpg';
 
 
 const SiderBar = () => {
     return (
-        <>
-            <div className="siderbar">
-                <div className="siderbar-seccion">
-                    <div className="x-icono">
-                        X
-                    </div>
-                    <nav className="lista-elementos">
-                        <Elemento href="/#" icon={VscHome} text="Inicio" />
-                        <Elemento href="/#" icon={VscSearch} text="Explorar" />
-                        <Elemento href="/#" icon={VscBell} text="Notificaciones" />
-                        <Elemento href="/#" icon={VscMail} text="Mensajes" />
-                        <Elemento href="/#" icon={VscChip} text="Grok" />
-                        <Elemento href="/#" icon={VscBookmark} text="Guardados" />
-                        <Elemento href="/#" icon={VscOrganization} text="Comunidades" />
-                        <Elemento href="/#" icon={VscAccount} text="Perfil" />
-                        <Elemento href="/#" icon={VscEllipsis} text="Más opciones" />
-                    </nav>
-                    <div className="userprofile">
-                        <div className="userprofile-seccion">
-                            <button>
-                                <div className="userprofile-avatar">
-                                    a
-                                </div>
-                                <div className="userprofile-username">
-                                    b
-                                </div>
-                                <div className="userprofile-logo">
-                                    c
-                                </div>
-                            </button>
-                        </div>
-                    </div>
+        <div >
+            <div className="x-icono">
+                <img src={Logo} alt="Logo de X" />
+                <a href="/" />
+            </div>
+            <nav>
+                {ListaElementos.map((item, index) =>(
+                    <Elemento href={item.href} icon={item.icon} text={item.text} key={index}/>
+                ))}
+            </nav>
+            <Button onClick={()=>alert('New POST')} text="POST"/>
+            <div className="userprofile">
+                <div className="userprofile-avatar">
+                <PostAvatarUser urlImage={Avatar}/>
+                </div>
+                <div className="userprofile-username">
+                    b
+                </div>
+                <div className="userprofile-logo">
+                    c
                 </div>
             </div>
-            
-        </>
+        </div>
     );
 }
 

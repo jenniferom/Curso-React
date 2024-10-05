@@ -1,7 +1,7 @@
 const RelevantInfo = () => {
     return(
         <div>
-            
+            relevantinfo
         </div>
     );
 }

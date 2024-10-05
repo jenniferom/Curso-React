@@ -1,35 +1,42 @@
-.siderbar {
-    align-items: flex-end;
-    background-color: rgba(0, 0, 0, 0.0);
-    border-bottom-color: rgb( 0, 0, 0);
-    border-bottom-style: solid;
-    color-scheme: dark;
-    font-size: 15px;
-    pointer-events: auto;
-    position: relative;
-    scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
-    text-decoration: none;
-    width: 275px;
-}
-.siderbar-seccion {
-    padding: 0 8px;
-}
-
-.lista-elementos {
-    align-items: flex-start;
-    color-scheme: dark;
-    flex-direction: column;
-    margin-top: 2px;
-    overflow-y: auto;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+/*.siderbar {
+  align-items: flex-end;
+  color-scheme: dark;
+  text-decoration: none;
+  width: 275px;
+  height: 100vh;
+}*/
+.x-logo {
+  border-radius: 50%;
+  cursor: pointer;
+  width: max-content;
+  &:hover{
+    background-color:  rgb( 255, 255, 255, 0.1);
+  }
 }
 
 .userprofile {
-    margin: 12px 0;
-    position: relative;
+  margin: 12px 0;
+  align-items: center;
+  border-radius: 25px;
+  display: flex;
+  gap: 10px;
+  height: 60px;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  &:hover{
+    background-color: rgb( 255, 255, 255, 0.1);
+  }
+}
+.userprofile-avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+.userprofile-username {
+  justify-items: start;
+  width: 58%;
+}
+
+.userprofile-icono {
+  width: 16%;
 }

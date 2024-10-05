@@ -1,17 +1,12 @@
 import './App.css'
-import HomeContainer from './modules/home/containers/homecontainer/HomeContainer';
-import RelevantInfo from './modules/home/containers/relevantinfo/RelevantInfo';
-import SiderBar from './modules/home/containers/siderbar/SiderBar';
+import DefaultLayout from './core/layouts/homeLayout/DefaultLayout';
 
 function App() {
-    
-  return (
-    <>
-      <SiderBar />
-      <HomeContainer />
-      <RelevantInfo />
-    </>
-  );
+    return (
+        <div className='app-container'>
+            <DefaultLayout />
+        </div>
+    );
 }
 
 export default App
