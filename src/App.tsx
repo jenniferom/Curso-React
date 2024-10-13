@@ -1,5 +1,4 @@
-import './App.css'
-import DefaultLayout from './core/layouts/homeLayout/DefaultLayout';
+import DefaultLayout from './modules/home/homeLayout/DefaultLayout';
 
 function App() {
     return (

@@ -13,4 +13,10 @@ export type PostUser = {
   name: string;
   username: string;
   avatar: string;
+  verified?: boolean;
 };
+
+export type NewPostDTO = {
+  content: string;
+  visibility: string;
+}
